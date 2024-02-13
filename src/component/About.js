@@ -16,7 +16,7 @@ const About = () => {
                 </div>
                 <div className="col-md-6">
                   <h4 className="text-white">Frontend Web Developer &<br/> designer</h4>
-                  <p className="my-description">Hey there! I'm [Your Name], a passionate frontend web developer and designer. With a keen eye for aesthetics and a knack for crafting seamless user experiences, I specialize in creating visually appealing and highly functional websites.
+                  <p className="my-description">Hey there! I'm Md. RIDOY MONDOL, a passionate frontend web developer and designer. With a keen eye for aesthetics and a knack for crafting seamless user experiences, I specialize in creating visually appealing and highly functional websites.
 
 <h5 className="margin-heading">What I Do:</h5>
 
