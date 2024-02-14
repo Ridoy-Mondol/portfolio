@@ -84,7 +84,7 @@ const Portfolio_Api = [
       title : "PORTFOLIO",
       img_src : project_5,
       description : "This is my portfolio website, crafted with React.js, seamlessly presents my skills, projects, and provides a comprehensive overview of my capabilities.",
-      link : "https://ridoy-mondol.github.io/portfolio/",
+      link : "https://ridoy-mondol.github.io/_portfolio/",
    },
 ]
 export default Api;
