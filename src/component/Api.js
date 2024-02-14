@@ -56,7 +56,7 @@ const Portfolio_Api = [
       title : "RIDOY SHOP",
       img_src : project_1,
       description : "This is a fully responsive and interactive e-commerce website developed using React.js, integrating APIs, Redux Toolkit, and following core React principles.",
-      link : "https://ridoy-mondol.github.io/e-commerce/",
+      link : "https://ridoy-mondol.github.io/ecommerce/",
    },
    {
       id : 2,
@@ -70,14 +70,14 @@ const Portfolio_Api = [
       title : "COFFESHOP",
       img_src : project_3,
       description : "This website for a coffee shop is user-friendly and fully functional, crafted with React.js for optimal performance. It offers a seamless experience for customers.",
-      link : "https://ridoy-mondol.github.io/coffeshop/",
+      link : "https://ridoy-mondol.github.io/coffe-shop/",
    },
    {
       id : 4,
       title : "CARVILLA",
       img_src : project_4,
       description : "This modern, innovative website for selling cars is developed using React.js. It offers a cutting-edge platform for buyers to explore a wide range of vehicles.",
-      link : "https://ridoy-mondol.github.io/carvilla/",
+      link : "https://ridoy-mondol.github.io/car-villa/",
    },
    {
       id : 5,
