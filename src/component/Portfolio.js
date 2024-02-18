@@ -10,7 +10,7 @@ const Portfolio = () => {
                 {
                     Portfolio_Api.map((elem) => {
                         return (
-                            <div className="col-lg-4 col-md-6 d-flex justify-content-center">
+                            <div className="col-lg-4 col-md-6 d-flex justify-content-center port-card-outer">
                                 <div className="card port-card">
                                     <h4>{elem.title}</h4>
                                     <img src = {elem.img_src} className="port-img" height="190" alt="" />

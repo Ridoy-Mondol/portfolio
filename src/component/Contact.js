@@ -72,7 +72,7 @@ setData({
             </div>
             </div>
             <div className="col-md-6 mt-5 mt-md-0">
-                <form method="POST" onSubmit={getData}>
+                <form action="https://formspree.io/f/xkndrzjn" method="POST" onSubmit={getData}>
                     <div className="mx-auto">
                     <input type="text" placeholder="Full Name" name="name" value={data.name} onChange={userData} className="input-div" />
                     </div>
