@@ -1,0 +1,35 @@
+import { Portfolio_Api } from "./Api";
+import { Link } from "react-router-dom"
+const Projects = () => {
+    return (
+        <div id="projects">
+        <div className="container-fluid portfolio-div">
+          <h3 className="text-center port-heading"><span className="border-heading">My <span className="home-text">Projects</span></span></h3>
+          <div className="container">
+            <div className="row">
+                {
+                    Portfolio_Api.map((elem, index) => {
+                        return (
+                            <div className="col-lg-4 col-md-6 d-flex justify-content-center port-card-outer" key={index}>
+                                <div className="card port-card">
+                                    <h4>{elem.title}</h4>
+                                    <Link className="overflow-hidden" to={elem.link}  target="_blank">
+                                    <img src = {elem.img_src} className="port-img" height="190" alt="" />
+                                    </Link>
+                                    <span className="port-desc">{elem.description}
+                                    </span>
+                                    <Link to={elem.link}  target="_blank">
+                                    <button className="port-btn">View Project</button>
+                                    </Link>
+                                </div>
+                            </div>
+                        )
+                    })
+                }
+            </div>
+          </div>
+        </div> 
+        </div>
+    )
+}
+export default Projects;

@@ -5,13 +5,20 @@ const Home = () => {
         <div className="home-bg text-white d-flex align-items-center">
           <div className="container">
             <div className="row">
-                <div className="col-md-6">
+                <div className="col-md-6 d-flex align-items-center">
+                  <div>
                   <h4 className="home-text home-margin">Hi,It's Me</h4>
-                  <h1>Md. RIDOY MONDOL</h1>
-                  <h4 className="text-white">And I'm a <span className="home-text">Frontend Web Developer & designer</span></h4>
-                  <span className="my-description">With expertise in HTML, CSS, Bootstrap, JavaScript and React, I specialize in crafting visually appealing and responsive websites. My passion for creative design, coupled with technical proficiency in React.js, allows me to bring ideas to life seamlessly. I thrive on building intuitive user interfaces and ensuring a delightful user experience. Let's collaborate and transform your vision into a stunning digital reality.</span>
+                  <h1 className="hide-item">Md. RIDOY MONDOL</h1>
+                  <h2 className="hide-laptop">Md. RIDOY MONDOL</h2>
+                  <h4 className="text-white">And I'm a <span className="home-text">Full Stack Developer</span></h4>
+                  <span className="my-description">specializing in the MERN stack. I build dynamic web applications with expertise in <span className="text-orange-2">React.js</span>, 
+                  <span className="text-orange-2"> Next.js</span>,
+                  <span className="text-orange-2"> Node.js</span>, 
+                  <span className="text-orange-2"> Express.js</span> and 
+                  <span className="text-orange-2"> MongoDB</span>, ensuring seamless user experiences from concept to deployment.</span>
+                  </div>
                 </div>
-                <div className="col-md-6 text-center">
+                <div className="col-md-6 d-flex align-items-center justify-content-center">
                     <img src = {img} alt = "" width="350" className="img-fluid"/>
                 </div>
             </div>
@@ -21,3 +28,4 @@ const Home = () => {
     )
 }
 export default Home;
+

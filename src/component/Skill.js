@@ -5,10 +5,10 @@ const Skill = () => {
             <div className="container">
             <h3 className="text-center about-heading"><span className="border-heading">My <span className="home-text">Skills</span></span></h3>
             {
-            Api_2.map((elem) => {
+            Api_2.map((elem, ind) => {
                 return (
-                <div className="row d-flex align-items-center">
-                    <div className="col-3 col-md-2 col-lg-1">
+                <div className="row d-flex align-items-center" key={ind}>
+                    <div className="col-5 col-md-2 col-lg-1">
                    <span>{elem.language}</span> 
                    </div>
                    <div className="col-10 col-md-8 col-lg-10 text-center">
