@@ -71,7 +71,7 @@ const getData = async (elem) => {
             <span className="contact-text">+8801319118383</span>
             </Link>
 
-            <Link target="_black" to="mailto:ridoymondol140@gmail.com" className="text-decoration-none text-white my-4 d-flex align-items-center linkedin">
+            <Link target="_black" to="mailto:ridoymondol140@gmail.com" className="text-decoration-none text-white my-4 d-flex align-items-center gmail">
             <i className="fa-solid fa-envelope contact-icon"></i>
             <span className="contact-text">ridoymondol140@gmail.com</span>
             </Link>
@@ -81,7 +81,7 @@ const getData = async (elem) => {
             <span className="contact-text">Ridoy Mondol</span>
             </Link>
 
-            <div className="d-flex align-items-center linkedin">
+            <div className="d-flex align-items-center gmail">
             <i className="fa-solid fa-location-arrow contact-icon"></i>
             <span className="contact-text">Rajshahi, Bangladesh</span>
             </div>
@@ -146,15 +146,3 @@ const getData = async (elem) => {
     )
 }
 export default Contact;
-
-
-
-
-
-
-
-
-
-
-
-

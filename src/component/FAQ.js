@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { accordionItems as items } from '../component/Api';
 
-const CustomAccordion = () => {
+const FAQ = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   const handleToggle = (index) => {
@@ -36,4 +36,5 @@ const CustomAccordion = () => {
   );
 };
 
-export default CustomAccordion;
+export default FAQ;
+

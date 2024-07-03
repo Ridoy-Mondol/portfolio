@@ -36,7 +36,11 @@ body {
 .link:hover {
   color: rgb(30, 220, 30); 
   font-weight: 600; 
-  transition: none;
+  transition: 0.2s ease-in-out;
+}
+.nav-item.active .link {
+  color: rgb(248,111,3);
+  font-weight: 600; 
   transition: 0.2s ease-in-out;
 }
 .nav-brand {
@@ -193,11 +197,12 @@ body {
 }
 .contact-icon{
   font-size: 1.35rem;
-  margin-left: 5%;
 }
 .linkedin {
-  width: 15rem;
-  margin-left: 0rem;
+  width: 12rem;
+}
+.gmail {
+  width: 17.2rem;
 }
 .input-div{
   width: 95%;
@@ -430,6 +435,11 @@ footer {
   .link:hover {
     color: #FFFFFF; 
     font-weight: 480; 
+  }
+  .nav-item.active .link {
+    color: green;
+    font-weight: 480; 
+    transition: 0.2s ease-in-out;
   }
   .backdrop {
     position: fixed;
