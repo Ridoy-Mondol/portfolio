@@ -31,11 +31,11 @@ const Home = () => {
             <div className="row">
                 <div className="col-md-6 d-flex align-items-center">
                   <div className='overflow-hidden'  ref={textRef} id="home-text">
-                  <h4 className={`home-text home-margin ${isTextIntersecting ? 'bottomIn' : ''}`}>Hi,It's Me</h4>
-                  <h1 className={`hide-item home-white-txt ${isTextIntersecting ? 'bottomIn' : ''} ${mode ? "dark" : ""}`}>Md. RIDOY MONDOL</h1>
-                  <h2 className={`hide-laptop home-white-txt ${isTextIntersecting ? 'bottomIn' : ''} ${mode ? "dark" : ""}`}>Md. RIDOY MONDOL</h2>
-                  <h4 className={`home-white-txt  ${isTextIntersecting ? 'bottomIn' : ''} ${mode ? "dark" : ""}`}>And I'm a <span className="home-text">Full Stack Developer</span></h4>
-                  <p className={`my-description ${isTextIntersecting ? 'bottomIn' : ''} ${mode ? "dark" : "light-color"}`}>specializing in the MERN stack. I build dynamic web applications with expertise in <span className="text-orange-2">React.js</span>, 
+                  <h4 className={`home-text home-margin ${isTextIntersecting ? 'leftIn2' : ''}`}>Hi,It's Me</h4>
+                  <h1 className={`hide-item home-white-txt ${isTextIntersecting ? 'leftIn2' : ''} ${mode ? "dark" : ""}`}>Md. RIDOY MONDOL</h1>
+                  <h2 className={`hide-laptop home-white-txt ${isTextIntersecting ? 'leftIn2' : ''} ${mode ? "dark" : ""}`}>Md. RIDOY MONDOL</h2>
+                  <h4 className={`home-white-txt  ${isTextIntersecting ? 'leftIn2' : ''} ${mode ? "dark" : ""}`}>And I'm a <span className="home-text">Full Stack Developer</span></h4>
+                  <p className={`my-description ${isTextIntersecting ? 'leftIn2' : ''} ${mode ? "dark" : "light-color"}`}>specializing in the MERN stack. I build dynamic web applications with expertise in <span className="text-orange-2">React.js</span>, 
                   <span className="text-orange-2"> Next.js</span>,
                   <span className="text-orange-2"> Node.js</span>, 
                   <span className="text-orange-2"> Express.js</span> and 
@@ -43,7 +43,7 @@ const Home = () => {
                   </div>
                 </div>
                 <div className="col-md-6 d-flex align-items-center justify-content-center overflow-hidden" ref={imgRef} id="home-img">
-                    <img src = {img} alt = "" width="350" className={`img-fluid home-img ${isImgIntersecting ? 'topIn' : ''}`}/>
+                    <img src = {img} alt = "" width="350" className={`img-fluid home-img ${isImgIntersecting ? 'rightIn2' : ''}`}/>
                 </div>
             </div>
           </div>

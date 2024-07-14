@@ -87,6 +87,16 @@ body {
     opacity: 1;
   }
 }
+@keyframes leftEnter2 {
+  from {
+    transform: translateX(-20%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
 @keyframes rightEnter {
   from {
     transform: translateX(100%);
@@ -97,11 +107,27 @@ body {
     opacity: 1;
   }
 }
+@keyframes rightEnter2 {
+  from {
+    transform: translateX(20%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
 .leftIn {
    animation: leftEnter 0.5s ease-in-out;
 }
+.leftIn2 {
+  animation: leftEnter2 0.5s ease-in-out;
+}
 .rightIn {
   animation: rightEnter 0.5s ease-in-out;
+}
+.rightIn2 {
+  animation: rightEnter2 0.5s ease-in-out;
 }
 .bottomIn {
   animation: bottomEnter 0.5s ease-in-out;
@@ -608,13 +634,13 @@ footer {
     align-items: center;
     justify-content: center;
     color: #FFFFFF;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 1.15rem;
+    padding-right: 1.15rem;
     font-size: 1rem;
     cursor: pointer;
     margin-left: 3.4vw;
     background-color: var(--main-bg-color);
-    border: 0.05px solid rgba(255, 255, 255, 0.5);
+    border: 1px solid var(--light-text-color);
   }
   .menu-btn-light {
     background-color: var(--main-text-color);
@@ -628,6 +654,8 @@ footer {
   }
   .toggle-mobile {
     margin-right: 3.4vw;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
   }
   .sidebar ul {
     list-style: none;
@@ -666,10 +694,6 @@ footer {
   }
   .logo-mobile {
     margin-right: 3.4vw;
-  }
-  .nav-btn:hover {
-    background-color: #FFFFFF;
-    color: rgb(67,54,106);
   }
 
   /* home */
@@ -851,12 +875,12 @@ footer {
     color: #FFFFFF;
     font-size: 1rem;
     margin-left: 8vw;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 1.15rem;
+    padding-right: 1.15rem;
     font-size: 1rem;
     cursor: pointer;
     background-color: var(--main-bg-color);
-    border: 1.6px solid var(--main-text-color);
+    border: 1px solid var(--main-text-color);
   }
   .menu-btn-light {
     background-color: var(--main-text-color);
@@ -870,6 +894,8 @@ footer {
   }
   .toggle-mobile {
     margin-right: 8vw;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
   }
   .sidebar ul {
     list-style: none;
@@ -903,10 +929,6 @@ footer {
   }
   .logo-mobile {
     margin-right: 8vw;
-  }
-  .nav-btn:hover {
-    background-color: #FFFFFF;
-    color: rgb(67,54,106);
   }
 
   /* home */
