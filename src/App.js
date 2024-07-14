@@ -10,7 +10,9 @@ import FAQ from './component/FAQ';
 import Footer from './component/Footer';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { useMode } from "./component/context";
 function App() {
+  const {mode} = useMode ();
   return (
     <>
     <ToastContainer 
@@ -19,15 +21,17 @@ function App() {
       theme="colored"
       bodyClassName="toast-body"
     />
+    <div className={mode ? "light-bg" : "dark-bg"}>
     <Navbar />
     <Home />
     <About />
     <Service />
     <Skill />
     <Projects />
-    <Contact />
     <FAQ />
+    <Contact />
     <Footer />
+    </div>
     </>
   );
 }

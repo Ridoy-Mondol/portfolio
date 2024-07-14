@@ -2,7 +2,7 @@ import project_1 from "../component/images/next_blog.png"
 import project_2 from "../component/images/e-commerce.png";
 import project_3 from "../component/images/cakezone.png"
 import project_4 from "../component/images/coffeshop.png"
-import project_5 from "../component/images/carvilla.png";
+import project_5 from "../component/images/carvilla.png"
 import project_6 from "../component/images/portfolio.png"
 const Api = [
     {
