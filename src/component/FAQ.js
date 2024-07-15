@@ -26,7 +26,7 @@ const FAQ = () => {
 
   return (
     <div className="accordion" id='faq'>
-      <div className="container">
+      <div className="container-md text-center">
         <Heading title1="Frequently Asked" title2="Questions" />
       </div>
       {items.map((item, index) => {

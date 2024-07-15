@@ -26,22 +26,22 @@ const Api = [
 ]
 const Api_2 = [
      {
-        language : "React Js",
+        language : "React.js",
         class : "react progress",
         percentage : "90%"
      },
      {
-      language : "Next Js",
+      language : "Next.js",
       class : "css progress",
       percentage : "85%"
    },
    {
-      language : "Node Js",
+      language : "Node.js",
       class : "js progress",
       percentage : "80%"
    },
    {
-      language : "Express Js",
+      language : "Express",
       class : "css progress",
       percentage : "85%"
    },
@@ -53,7 +53,12 @@ const Api_2 = [
    {
       language : "SQL",
       class : "js progress",
-      percentage : "85%"
+      percentage : "80%"
+   },
+   {
+      language : "JavaScript",
+      class : "js progress",
+      percentage : "80%"
    },
    {
       language : "HTML",
@@ -75,11 +80,17 @@ const Api_2 = [
     class : "css progress",
     percentage : "85%"
  },
-   {
-      language : "JavaScript",
-      class : "js progress",
-      percentage : "80%"
-   },
+ {
+   language : "ShadCN",
+   class : "css progress",
+   percentage : "85%"
+},
+{
+   language : "MUI",
+   class : "js progress",
+   percentage : "80%"
+},
+   
 ]
 const Portfolio_Api = [
    {

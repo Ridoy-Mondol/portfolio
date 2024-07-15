@@ -6,7 +6,10 @@ const useIntersectionObserver = (targetRef, options) => {
   useEffect(() => {
     const observer = new IntersectionObserver(([entry]) => {
       setIsIntersecting(entry.isIntersecting);
-    }, options);
+    }, {
+      ...options,
+      rootMargin: '-72px 0px 0px 0px'
+    });
 
     const currentTarget = targetRef.current;
     if (currentTarget) {

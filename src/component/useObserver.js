@@ -10,7 +10,10 @@ const useObserver = (options) => {
         id: entry.target.id,
         isIntersecting: entry.isIntersecting
       })));
-    }, options);
+    }, {
+      ...options,
+      rootMargin: '-72px 0px 0px 0px'
+    });
 
     observerRef.current = observer;
 
@@ -35,3 +38,4 @@ const useObserver = (options) => {
 };
 
 export default useObserver;
+

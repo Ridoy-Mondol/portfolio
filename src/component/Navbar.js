@@ -51,7 +51,7 @@ const Navbar = () => {
       <div className={`sidebar ${show ? 'active' : ''}`}>
         <div className="sidebar-header d-flex justify-content-between">
           <div>
-          <button className="close-button py-2" onClick={showNavItem}>
+          <button className="close-button" onClick={showNavItem}>
           <i className="fa-solid fa-xmark"></i>
           </button>
           </div>
@@ -90,7 +90,7 @@ const Navbar = () => {
 
       </div>
       <div className="content my-auto">
-        <button className={`menu-button py-2 ${mode ? "light-bg menu-btn-light" : ""}`} onClick={showNavItem}>
+        <button className={`menu-button ${mode ? "light-bg menu-btn-light" : ""}`} onClick={showNavItem}>
         <i className="fa-solid fa-bars"></i>
         </button>
       </div>

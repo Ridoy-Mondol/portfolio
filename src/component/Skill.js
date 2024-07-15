@@ -34,7 +34,7 @@ const Skill = () => {
                 <span className={mode ? "dark-text" : "light-color"}>{elem.language}</span>
               </div>
               <div className="col-10 col-md-8 col-lg-10 text-center overflow-hidden">
-                <div className={`progress-bar d-flex justify-content-center ${isIntersecting ? 'topfullIn' : ''} ${mode ? "progress-border" : ""}`}>
+                <div className={`progress-bar d-flex justify-content-center ${isIntersecting ? 'topIn' : ''} ${mode ? "progress-border" : ""}`}>
                   <div className={elem.class}></div>
                 </div>
               </div>

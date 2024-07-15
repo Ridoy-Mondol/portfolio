@@ -59,16 +59,6 @@ body {
 }
 @keyframes topEnter {
   from {
-    transform: translateY(-15%);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0%);
-    opacity: 1;
-  }
-}
-@keyframes topFullEnter {
-  from {
     transform: translateY(-100%);
     opacity: 0;
   }
@@ -87,16 +77,6 @@ body {
     opacity: 1;
   }
 }
-@keyframes leftEnter2 {
-  from {
-    transform: translateX(-20%);
-    opacity: 0;
-  }
-  to {
-    transform: translateX(0%);
-    opacity: 1;
-  }
-}
 @keyframes rightEnter {
   from {
     transform: translateX(100%);
@@ -107,36 +87,17 @@ body {
     opacity: 1;
   }
 }
-@keyframes rightEnter2 {
-  from {
-    transform: translateX(20%);
-    opacity: 0;
-  }
-  to {
-    transform: translateX(0%);
-    opacity: 1;
-  }
-}
 .leftIn {
    animation: leftEnter 0.5s ease-in-out;
 }
-.leftIn2 {
-  animation: leftEnter2 0.5s ease-in-out;
-}
 .rightIn {
   animation: rightEnter 0.5s ease-in-out;
-}
-.rightIn2 {
-  animation: rightEnter2 0.5s ease-in-out;
 }
 .bottomIn {
   animation: bottomEnter 0.5s ease-in-out;
 }
 .topIn {
   animation: topEnter 0.5s ease-in-out;
-}
-.topfullIn {
-  animation: topFullEnter 0.5s ease-in-out;
 }
 
 /* heading */
@@ -147,7 +108,6 @@ body {
 }
 .about-heading{
   margin-bottom: 7rem;
-  padding-bottom: 0.6rem;
   color: var(--light-text-color);
   transition: margin-bottom 0.3s ease-in, color 0.3s ease-in;
 }
@@ -267,7 +227,7 @@ body {
 .home-bg {
   height: 90vh;
   width: 100vw;
-  padding: 4.5rem 0 0 0;
+  margin: 4.5rem 0 0 0;
 }
 .my-description{
   font-size: 1.1rem;
@@ -409,6 +369,11 @@ body {
   transform: translateX(-50%);
   transition: background-color 0.3s ease-in, color 0.3s ease-in, border 0.3s ease-in;
 }
+.input-div-parent {
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
 .input-div::placeholder, 
 .input-inline::placeholder{
   color: #FFFFFF;
@@ -539,6 +504,7 @@ footer {
   font-weight: 500;
 }
 
+
 /* projects */
 .portfolio-div {
   color: #FFFFFF;
@@ -548,7 +514,7 @@ footer {
   background-color: var(--main-bg-color);
   border: 1px solid rgba(255, 255, 255, 0.5);
   color: #FFFFFF;
-  width: 90%;
+  width: 100%;
   padding: 1rem;
   margin-bottom: 3rem;
   overflow: hidden;
@@ -573,6 +539,7 @@ footer {
 .port-img {
   padding: 1rem 0;
   width: 100%;
+  height: 13rem;
   transform: scale(1);
   transition: transform 0.3s ease-in-out;
 }
@@ -634,8 +601,7 @@ footer {
     align-items: center;
     justify-content: center;
     color: #FFFFFF;
-    padding-left: 1.15rem;
-    padding-right: 1.15rem;
+    padding: 0.35rem 1.15rem;
     font-size: 1rem;
     cursor: pointer;
     margin-left: 3.4vw;
@@ -654,8 +620,8 @@ footer {
   }
   .toggle-mobile {
     margin-right: 3.4vw;
-    padding-top: 0.25rem;
-    padding-bottom: 0.25rem;
+    padding-top: 0.11rem;
+    padding-bottom: 0.11rem;
   }
   .sidebar ul {
     list-style: none;
@@ -697,9 +663,6 @@ footer {
   }
 
   /* home */
-  .home-margin{
-      margin-top: 4.5rem;      
-  }
   .hide-laptop {
     display: block;
   }
@@ -707,7 +670,7 @@ footer {
     height: auto;
   }
   #home-img {
-    margin-top: 2rem;
+    margin-top: 1.5rem;
   }
   
   /* about */
@@ -747,9 +710,6 @@ footer {
   }
 
   /* portfolio */
-  .port-heading {
-    padding: 5rem 0;
-  }
   .port-card-outer {
     padding: 0;
   }
@@ -757,6 +717,10 @@ footer {
     position: relative;
     margin-bottom: 1.5rem;
     width: 100%;
+    padding: 0.8rem;
+  }
+  .port-img {
+    height: auto;
   }
 
   /* contact */
@@ -785,13 +749,6 @@ footer {
     gap: 1.5rem;
     transition: background-color 0.3s ease-in-out;
   }
-  .accordion-btn:hover {
-    background-color: rgb(65, 47, 113);
-  }
-  .accordion-btn.active {
-    background-color: rgb(248,111,3);
-    transition: background-color 0.3s ease-in-out;
-  }
   .faq-icon {
     font-size: 1rem;
   }
@@ -810,10 +767,7 @@ footer {
     padding: 0 3vw;
     height: 12rem;
   }
-
-  .port-heading {
-    font-size: 1.5rem;
-  }
+  
 
   /* footer */
   footer {
@@ -932,9 +886,6 @@ footer {
   }
 
   /* home */
-  .home-margin{ 
-    margin-top: 2rem;     
-  }
   .hide-laptop {
     display: block;
   }
