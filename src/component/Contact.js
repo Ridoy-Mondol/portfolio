@@ -265,7 +265,7 @@ const Contact = () => {
                                 <button
                                     type="submit"
                                     className={`contact-btn nav-btn mt-3 ${isBtnIntersecting ? 'rightIn' : ''} ${mode ? "btn-light" : ""}`}
-                                    onClick={getData}
+                                    onSubmit={getData}
                                 >
                                     Send
                                 </button>
