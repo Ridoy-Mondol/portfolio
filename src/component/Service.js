@@ -35,7 +35,7 @@ const Service = () => {
                 id={`card-${index}`}
               >
                 <div className={`card-div text-center mx-auto animated overflow-hidden ${mode ? "light-card" : ""}`}>
-                  <i className={`${elem.icon} ${isIntersecting ? 'topIn' : ''}`}></i>
+                  <i className={`${elem.icon} ${isIntersecting ? 'leftIn' : ''}`}></i>
                   <h5 className={`${isIntersecting ? 'leftIn' : ''}`}>{elem.category}</h5>
                   <p className={`description ${isIntersecting ? 'rightIn' : ''}`}>{elem.description}</p>
                 </div>

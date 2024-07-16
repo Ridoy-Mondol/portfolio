@@ -130,7 +130,7 @@ const Contact = () => {
                                 <Link
                                     target="_blank"
                                     to="https://www.linkedin.com/in/md-ridoy-mondol-885555297/"
-                                    className={`d-flex align-items-center text-decoration-none linkedin ${isLinkedInIntersecting ? 'leftIn' : ''} ${mode ? "dark" : ""}`}
+                                    className={`d-flex align-items-center text-decoration-none linkedin ${isLinkedInIntersecting ? 'leftIn' : ''} ${mode ? "dark light-link" : ""}`}
                                 >
                                     <i className="fa-brands fa-linkedin contact-icon"></i>
                                     <span className="contact-text">Md. Ridoy Mondol</span>
@@ -141,7 +141,7 @@ const Contact = () => {
                                 <Link
                                     target="_blank"
                                     to="https://www.facebook.com/profile.php?id=100015131225530"
-                                    className={`d-flex align-items-center text-decoration-none my-4 linkedin ${isFacebookIntersecting ? 'leftIn' : ''} ${mode ? "dark" : ""}`}
+                                    className={`d-flex align-items-center text-decoration-none my-4 linkedin ${isFacebookIntersecting ? 'leftIn' : ''} ${mode ? "dark light-link" : ""}`}
                                 >
                                     <i className="fa-brands fa-facebook contact-icon"></i>
                                     <span className="contact-text">Ridoy Mondol</span>
@@ -152,7 +152,7 @@ const Contact = () => {
                                 <Link
                                     target="_blank"
                                     to="https://wa.me/8801319118383"
-                                    className={`text-decoration-none d-flex align-items-center linkedin ${isWhatsappIntersecting ? 'leftIn' : ''} ${mode ? "dark" : ""}`}
+                                    className={`text-decoration-none d-flex align-items-center linkedin ${isWhatsappIntersecting ? 'leftIn' : ''} ${mode ? "dark light-link" : ""}`}
                                 >
                                     <i className="fa-brands fa-whatsapp contact-icon"></i>
                                     <span className="contact-text">+8801319118383</span>
@@ -163,7 +163,7 @@ const Contact = () => {
                                 <Link
                                     target="_blank"
                                     to="mailto:ridoymondol140@gmail.com"
-                                    className={`text-decoration-none my-4 d-flex align-items-center gmail ${isEmailIntersecting ? 'leftIn' : ''} ${mode ? "dark" : ""}`}
+                                    className={`text-decoration-none my-4 d-flex align-items-center gmail ${isEmailIntersecting ? 'leftIn' : ''} ${mode ? "dark light-link" : ""}`}
                                 >
                                     <i className="fa-solid fa-envelope contact-icon"></i>
                                     <span className="contact-text">ridoymondol140@gmail.com</span>
@@ -174,7 +174,7 @@ const Contact = () => {
                                 <Link
                                     target="_blank"
                                     to="https://github.com/Ridoy-Mondol"
-                                    className={`text-decoration-none my- d-flex align-items-center linkedin ${isGithubIntersecting ? 'leftIn' : ''} ${mode ? "dark" : ""}`}
+                                    className={`text-decoration-none my- d-flex align-items-center linkedin ${isGithubIntersecting ? 'leftIn' : ''} ${mode ? "dark light-link" : ""}`}
                                 >
                                     <i className="fa-brands fa-github contact-icon"></i>
                                     <span className="contact-text">Ridoy Mondol</span>
@@ -182,7 +182,7 @@ const Contact = () => {
                             </div>
                             
                             <div ref={locationRef} id="contact-location">
-                                <div className={`d-flex align-items-center my-4 gmail ${isLocationIntersecting ? 'leftIn' : ''} ${mode ? "dark" : ""}`}>
+                                <div className={`d-flex align-items-center my-4 gmail ${isLocationIntersecting ? 'leftIn' : ''} ${mode ? "dark light-link" : ""}`}>
                                     <i className="fa-solid fa-location-arrow contact-icon"></i>
                                     <span className="contact-text">Rajshahi, Bangladesh</span>
                                 </div>

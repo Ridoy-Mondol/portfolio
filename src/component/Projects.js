@@ -41,11 +41,11 @@ const Projects = () => {
                   >
                     <h4 className={`${isIntersecting ? 'leftIn' : ''}`}>{elem.title}</h4>
                     <Link className="overflow-hidden" to={elem.link} target="_blank">
-                      <img src={elem.img_src} className={`port-img img-fluid ${isIntersecting ? 'topIn' : ''}`} height="190" alt="" />
+                      <img src={elem.img_src} className={`port-img img-fluid ${isIntersecting ? 'leftIn' : ''}`} height="190" alt="" />
                     </Link>
                     <span className={`port-desc ${isIntersecting ? 'rightIn' : ''}`}>{elem.description}</span>
                     <Link to={elem.link} target="_blank" className="overflow-hidden">
-                      <button className={`port-btn ${isIntersecting ? 'bottomIn' : ''}`}>View Project</button>
+                      <button className={`port-btn ${isIntersecting ? 'rightIn' : ''} ${mode ? "port-btn-light" : ""}`}>View Project</button>
                     </Link>
                   </div>
                 </div>

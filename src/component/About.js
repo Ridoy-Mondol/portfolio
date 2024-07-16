@@ -12,8 +12,9 @@ const About = () => {
 
     const imgRef = useRef(null);
     const h4Ref = useRef(null);
-    const h51Ref = useRef(null);
+    const h50Ref = useRef(null);
     const p1Ref = useRef(null);
+    const h51Ref = useRef(null);
     const p2Ref = useRef(null);
     const p3Ref = useRef(null);
     const p4Ref = useRef(null);
@@ -31,8 +32,9 @@ const About = () => {
     useEffect(() => {
         observe(imgRef);
         observe(h4Ref);
-        observe(h51Ref);
+        observe(h50Ref);
         observe(p1Ref);
+        observe(h51Ref);
         observe(p2Ref);
         observe(p3Ref);
         observe(p4Ref);
@@ -48,8 +50,9 @@ const About = () => {
         return () => {
             unobserve(imgRef);
             unobserve(h4Ref);
-            unobserve(h51Ref);
+            unobserve(h50Ref);
             unobserve(p1Ref);
+            unobserve(h51Ref);
             unobserve(p2Ref);
             unobserve(p3Ref);
             unobserve(p4Ref);
@@ -70,11 +73,14 @@ const About = () => {
     const h4Entry = entries.find(e => e.id === 'about-h4');
     const isH4Intersecting = h4Entry ? h4Entry.isIntersecting : false;
 
-    const h51Entry = entries.find(e => e.id === 'about-h51');
-    const isH51Intersecting = h51Entry ? h51Entry.isIntersecting : false;
+    const h50Entry = entries.find(e => e.id === 'about-h50');
+    const isH50Intersecting = h50Entry ? h50Entry.isIntersecting : false;
 
     const p1Entry = entries.find(e => e.id === 'about-p1');
     const isP1Intersecting = p1Entry ? p1Entry.isIntersecting : false;
+
+    const h51Entry = entries.find(e => e.id === 'about-h51');
+    const isH51Intersecting = h51Entry ? h51Entry.isIntersecting : false;
 
     const p2Entry = entries.find(e => e.id === 'about-p2');
     const isP2Intersecting = p2Entry ? p2Entry.isIntersecting : false;
@@ -124,55 +130,63 @@ const About = () => {
                             <div ref={h4Ref} id="about-h4">
                                 <h4 className={`${isH4Intersecting ? 'rightIn' : ''}`}>Full Stack Web Developer</h4>
                             </div>
-                            <div ref={h51Ref} id="about-h51">
-                                <h5 className={`${isH51Intersecting ? 'rightIn' : ''}`}>What I Do:</h5>
+                            <div ref={h50Ref} id="about-h50" className="mt-3">
+                                <h5 className={`${isH50Intersecting ? 'rightIn' : ''}`}>Who I Am:</h5>
                             </div>
                             <div ref={p1Ref} id="about-p1">
                                 <p className={`my-description ${isP1Intersecting ? 'rightIn' : ''}`}>
-                                    Hey there! I'm Md. RIDOY MONDOL, a passionate full-stack developer specializing in the MERN stack. With a background in frontend design and a deep understanding of backend development, I bring a holistic approach to creating robust web applications.
+                                Hi, I’m Md. RIDOY MONDOL, a dedicated full-stack developer who loves building web applications with the MERN stack.
                                 </p>
+                            </div>
+                            <div ref={h51Ref} id="about-h51" className="mt-3">
+                                <h5 className={`${isH51Intersecting ? 'rightIn' : ''}`}>What I Do:</h5>
                             </div>
                             <div ref={p2Ref} id="about-p2">
                                 <p className={`${isP2Intersecting ? 'rightIn' : ''}`}>
-                                    <span className="text-orange">🌐 Full-Stack Mastery:</span> I excel in building end-to-end web solutions using MongoDB, Express.js, React.js, and Node.js (MERN stack), ensuring both frontend elegance and backend efficiency.
+                                    <span className="text-orange">🌐 Full-Stack Development:</span> I use MongoDB, Express.js, React.js, and Node.js to create efficient and user-friendly web apps.
                                 </p>
                             </div>
                             <div ref={p3Ref} id="about-p3">
                                 <p className={`${isP3Intersecting ? 'rightIn' : ''}`}>
-                                    <span className="text-orange">🚀 Frontend Magic:</span> Leveraging React.js, Next.js, JavaScript, HTML, CSS, Bootstrap and Tailwind CSS I develop responsive and interactive interfaces that engage users and enhance usability.
+                                    <span className="text-orange">🚀 Frontend Skills:</span>  I design engaging and responsive interfaces with React.js, Next.js, JavaScript, HTML, CSS, Bootstrap, Tailwind CSS.
                                 </p>
                             </div>
                             <div ref={p4Ref} id="about-p4">
                                 <p className={`${isP4Intersecting ? 'rightIn' : ''}`}>
-                                    <span className="text-orange">⚙️ Backend Expertise:</span> From database management to server-side logic, I implement CRUD operations, REST APIs, authentication, authorization, and caching to optimize performance and security.
+                                    <span className="text-orange">⚙️ Backend Expertise:</span> I manage databases, server logic, APIs, authentication, and caching to keep your app running smoothly and securely.
                                 </p>
                             </div>
                             {display && (
                                 <div className="overflow-hidden">
-                                    <div ref={h52Ref} id="about-h52">
-                                        <h5 className={`${isH52Intersecting ? 'rightIn' : ''}`}>Why Choose Me:</h5>
+                                    <div ref={h52Ref} id="about-h52" className="mt-3">
+                                        <h5 className={`${isH52Intersecting ? 'rightIn' : ''}`}>Why Work With Me:</h5>
                                     </div>
                                     <div ref={p5Ref} id="about-p5">
-                                        <p className={`${isP5Intersecting ? 'rightIn' : ''}`}><span className="text-orange">✅ Seamless Integration:</span> I ensure seamless integration of frontend designs with backend functionalities, delivering cohesive and scalable web applications.</p>
+                                        <p className={`${isP5Intersecting ? 'rightIn' : ''}`}><span className="text-orange">✅ Smooth Integration:</span> 
+                                        I ensure the frontend and backend work together perfectly for a seamless user experience.
+                                        </p>
                                     </div>
                                     <div ref={p6Ref} id="about-p6">
-                                        <p className={`${isP6Intersecting ? 'rightIn' : ''}`}><span className="text-orange">✅ Future-Proof Solutions:</span> I stay ahead by exploring new technologies and methodologies, ensuring your project remains modern and adaptable to future demands.</p>
+                                        <p className={`${isP6Intersecting ? 'rightIn' : ''}`}><span className="text-orange">
+                                            ✅ Always Up-to-Date:
+                                            </span> 
+                                            I keep up with new tech to make sure your project is modern and future-proof.</p>
                                     </div>
                                     <div ref={p7Ref} id="about-p7">
-                                        <p className={`${isP7Intersecting ? 'rightIn' : ''}`}><span className="text-orange">✅ Collaborative Approach:</span> Whether you're a business seeking a robust online presence or a developer looking to partner on projects, I'm dedicated to turning ideas into impactful digital solutions.</p>
+                                        <p className={`${isP7Intersecting ? 'rightIn' : ''}`}><span className="text-orange">✅ Collaborative Approach:</span> Whether you need a strong online presence or a developer to collaborate with, I'm here to help turn your ideas into reality.</p>
                                     </div>
-                                    <div ref={h53Ref} id="about-h53">
+                                    <div ref={h53Ref} id="about-h53" className="mt-3">
                                         <h5 className={`${isH53Intersecting ? 'rightIn' : ''}`}>Let's Create Something Beautiful Together!</h5>
                                     </div>
                                     <div ref={p8Ref} id="about-p8">
-                                        <p className={`margin-text ${isP8Intersecting ? 'rightIn' : ''}`}>Let's collaborate and bring your vision to life. Explore my portfolio to see examples of my work and reach out to discuss how we can create something exceptional together.</p>
+                                        <p className={`${isP8Intersecting ? 'rightIn' : ''}`}>Check out my portfolio to see my work and get in touch to discuss your project.</p>
                                     </div>
                                     <div ref={p9Ref} id="about-p9">
-                                        <p className={`${isP9Intersecting ? 'topIn' : ''}`}>Ready to innovate? Let's connect!</p>
+                                        <p className={`${isP9Intersecting ? 'topIn' : ''}`}>Ready to create something great? Let's connect!</p>
                                     </div>
                                 </div>
                             )}
-                            <button className={`nav-btn mt-4 ${isBtnIntersecting ? 'rightIn' : ''} ${mode ? "dark-btn about-btn-hover" : ""}`} onClick={showText} ref={btnRef} id="about-btn">
+                            <button className={`nav-btn ${isBtnIntersecting ? 'rightIn' : ''} ${mode ? "dark-btn about-btn-hover" : ""}`} onClick={showText} ref={btnRef} id="about-btn">
                                 {display ? "See Less" : "See More"}
                             </button>
                         </div>

@@ -10,6 +10,7 @@
   --main-bg-color: #121212;
   --main-text-color: #FAFAFA;
   --light-text-color: #FFFFFF;
+  --main-orange-color: rgb(248,111,3);
 }
 
 body {
@@ -88,16 +89,16 @@ body {
   }
 }
 .leftIn {
-   animation: leftEnter 0.5s ease-in-out;
+   animation: leftEnter 0.75s ease-in-out;
 }
 .rightIn {
-  animation: rightEnter 0.5s ease-in-out;
+  animation: rightEnter 0.75s ease-in-out;
 }
 .bottomIn {
-  animation: bottomEnter 0.5s ease-in-out;
+  animation: bottomEnter 0.75s ease-in-out;
 }
 .topIn {
-  animation: topEnter 0.5s ease-in-out;
+  animation: topEnter 0.75s ease-in-out;
 }
 
 /* heading */
@@ -139,14 +140,9 @@ body {
   transition: color 0.3s ease-in;
 }
 .link:hover {
-  color: rgb(30, 220, 30)!important; 
+  color: var(--main-orange-color)!important; 
   font-weight: 600!important; 
   transition: 0.2s ease-in-out!important;
-}
-.nav-item.active .link {
-  color: rgb(248,111,3);
-  font-weight: 600; 
-  transition: 0.2s ease-in-out;
 }
 .nav-brand {
   color:#FFFFFF;
@@ -249,9 +245,6 @@ body {
   font-size: 1.3rem;
   font-weight: 600;
 }
-.margin-text{
-  margin-top: 0.8rem;
-}
 .margin-heading{
   margin-top: 2rem;
 }
@@ -353,7 +346,7 @@ body {
 }
 .linkedin:hover,
 .gmail:hover {
-  color: rgb(30, 220, 30)!important;
+  color: var(--main-orange-color)!important;
 } 
 .input-div{
   width: 95%;
@@ -470,8 +463,10 @@ body {
 }
 .accordion-btn:hover,
 .accordion-btn.active {
-  background-color: rgb(10, 120, 10)!important;
+  background-color: var(--main-orange-color)!important;
   color: white!important;
+  border-top: 1px solid rgba(255, 255, 255, 0.5)!important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5)!important;
 }
 .accordion-btn .faq-icon {
   transition: transform 0.3s ease;
@@ -527,14 +522,28 @@ footer {
   transition: all 0.3s ease-in;
 }
 .port-btn {
-  background-color: #5757E0;
-  color: #FFFFFF;
+  background-color: var(--main-bg-color);
+  color: var(--light-text-color);
   font-size: 1.1rem;
-  border: none;
+  border: 0.05px solid rgba(255, 255, 255, 0.5);
   margin-top: 1rem;
   padding: 0.5rem 1.2rem;
   width: 100%;
-  border-radius: 0.5rem;
+  border-radius: 0.3rem;
+  transition: background-color 0.3s ease-in, color 0.3s ease-in, border 0.3s ease-in;
+}
+.port-btn-light {
+  background-color: var(--main-text-color);
+  color: var(--main-bg-color);
+  border: 0.05px solid rgba(0, 0, 0, 0.5);
+  transition: background-color 0.3s ease-in, color 0.3s ease-in, border 0.3s ease-in;
+}
+.port-btn:hover,
+.port-btn-light:hover {
+  background-color: var(--main-orange-color);
+  color: var(--light-text-color);
+  border: 0.05px solid rgba(255, 255, 255, 0.5);
+  transition: background-color 0.3s ease-in, color 0.3s ease-in, border 0.3s ease-in;
 }
 .port-img {
   padding: 1rem 0;
@@ -640,17 +649,16 @@ footer {
     margin-left: 3.4vw;
   }
   .link:hover {
-    color: #FFFFFF; 
-    font-weight: 480; 
+    color: var(--light-text-color)!important; 
+    font-weight: 480!important; 
   }
   .home-link {
     margin-top: 1rem;
   }
-  .nav-item.active .link {
-    color: green;
+  /* .nav-item.active .link {
     font-weight: 480; 
     transition: 0.2s ease-in-out;
-  }
+  } */
   .backdrop {
     position: fixed;
     top: 0;
@@ -722,6 +730,16 @@ footer {
     width: 100%;
     padding: 0.8rem;
   }
+  .port-btn:hover {
+    background-color: var(--main-bg-color);
+    color: var(--light-text-color);
+    border: 0.05px solid rgba(255, 255, 255, 0.5);
+  }
+  .port-btn-light:hover {
+    background-color: var(--main-text-color);
+    color: var(--main-bg-color);
+    border: 0.05px solid rgba(0, 0, 0, 0.5);
+  }
   .port-img {
     height: auto;
   }
@@ -736,6 +754,13 @@ footer {
   .gmail {
     width: 100%;
   }
+  .linkedin:hover,
+  .gmail:hover {
+    color: var(--light-text-color)!important;
+  }
+  .light-link:hover {
+    color: var(--main-bg-color)!important;
+  } 
   .contact-btn:hover {
     background-color: var(--main-bg-color)!important;
     border: 0.05px solid rgba(255, 255, 255, 0.5)!important;
@@ -758,6 +783,27 @@ footer {
     gap: 1.5rem;
     transition: background-color 0.3s ease-in-out;
   }
+  .accordion-btn:hover {
+    background-color: var(--main-bg-color)!important;
+    color: #FFFFFF!important;
+    border-top: 1px solid rgba(255, 255, 255, 0.5)!important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5)!important;
+    transition: all 0.3s ease-in!important;
+  }
+  .accordion-btn-light:hover {
+    background-color: var(--main-text-color)!important;
+    color: var(--main-bg-color)!important;
+    border-top: 1px solid rgba(0, 0, 0, 0.3)!important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3)!important;
+    transition: all 0.3s ease-in!important;
+  }
+  .accordion-btn.active {
+    background-color: var(--main-orange-color)!important;
+    color: white!important;
+    border-top: 1px solid rgba(255, 255, 255, 0.5)!important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5)!important;
+    transition: all 0.3s ease-in!important;
+  }
   .faq-icon {
     font-size: 1rem;
   }
@@ -775,7 +821,7 @@ footer {
   }
   .open {
     padding: 0 3vw;
-    height: 11rem;
+    height: 12.3rem;
   }
   
 
@@ -880,8 +926,8 @@ footer {
     margin-left: 8vw;
   }
   .link:hover {
-    color: #FFFFFF; 
-    font-weight: 480; 
+    color: var(--light-text-color)!important; 
+    font-weight: 480!important; 
   }
   .backdrop {
     position: fixed;
@@ -939,7 +985,26 @@ footer {
   width: 100%;
 }
 
+/* projects */
+.port-btn:hover {
+  background-color: var(--main-bg-color);
+  color: var(--light-text-color);
+  border: 0.05px solid rgba(255, 255, 255, 0.5);
+}
+.port-btn-light:hover {
+  background-color: var(--main-text-color);
+  color: var(--main-bg-color);
+  border: 0.05px solid rgba(0, 0, 0, 0.5);
+}
+
 /* contact */
+.linkedin:hover,
+  .gmail:hover {
+  color: var(--light-text-color)!important;
+}
+.light-link:hover {
+  color: var(--main-bg-color)!important;
+} 
 .contact-btn:hover {
   background-color: var(--main-bg-color)!important;
   border: 0.05px solid rgba(255, 255, 255, 0.5)!important;
@@ -960,11 +1025,25 @@ footer {
   transition: background-color 0.3s ease-in-out;
 }
 .accordion-btn:hover {
-  background-color: rgb(65, 47, 113);
+  background-color: var(--main-bg-color)!important;
+  color: #FFFFFF!important;
+  border-top: 1px solid rgba(255, 255, 255, 0.5)!important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5)!important;
+  transition: all 0.3s ease-in!important;
+}
+.accordion-btn-light:hover {
+  background-color: var(--main-text-color)!important;
+  color: var(--main-bg-color)!important;
+  border-top: 1px solid rgba(0, 0, 0, 0.3)!important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3)!important;
+  transition: all 0.3s ease-in!important;
 }
 .accordion-btn.active {
-  background-color: rgb(248,111,3);
-  transition: background-color 0.3s ease-in-out;
+  background-color: var(--main-orange-color)!important;
+  color: white!important;
+  border-top: 1px solid rgba(255, 255, 255, 0.5)!important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5)!important;
+  transition: all 0.3s ease-in!important;
 }
 .faq-icon {
   font-size: 1rem;

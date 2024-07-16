@@ -37,7 +37,7 @@ const FAQ = () => {
           <div className="faq-card" key={index} ref={el => refs.current[index] = { current: el }} id={`faq-card-${index}`}>
             <div className="card-header">
               <button
-                className={`accordion-btn ${activeIndex === index ? 'active' : ''} ${mode ? "btn-light" : ""}`}
+                className={`accordion-btn ${activeIndex === index ? 'active ' : ''} ${mode ? "btn-light accordion-btn-light" : ""}`}
                 onClick={() => handleToggle(index)}
                 aria-expanded={activeIndex === index ? 'true' : 'false'}
               >
