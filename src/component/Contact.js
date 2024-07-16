@@ -225,7 +225,7 @@ const Contact = () => {
                                 <div className="input-flex mt-3">
                                     <input 
                                         type="number" 
-                                        placeholder="Phone Number" 
+                                        placeholder="Phone" 
                                         name="phone" 
                                         value={data.phone}
                                         autoComplete='off'

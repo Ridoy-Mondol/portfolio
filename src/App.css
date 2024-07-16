@@ -362,7 +362,7 @@ body {
   border-radius: 3rem;
   border: 1px solid rgba(255, 255, 255, 0.5);
   outline: none;
-  padding-left: 1.5rem;
+  padding-left: 0.8rem;
   caret-color: #FFFFFF;
   color: #FFFFFF;
   margin-left: 50%;
@@ -393,7 +393,7 @@ body {
   border-radius: 3rem; 
   border: 1px solid rgba(255, 255, 255, 0.5);
   outline: none;
-  padding-left: 1.5rem;
+  padding-left: 0.8rem;
   background-color: var(--main-bg-color);
   caret-color: #FFFFFF;
   color: #FFFFFF;
@@ -596,12 +596,15 @@ footer {
   .uil {
     font-size: 1rem;
   }
+  .logo-padding {
+    padding: 0.3rem 0.3rem;
+  } 
   .menu-button,.close-button {
     display: flex;
     align-items: center;
     justify-content: center;
     color: #FFFFFF;
-    padding: 0.35rem 1.15rem;
+    padding: 0.4rem 1.15rem;
     font-size: 1rem;
     cursor: pointer;
     margin-left: 3.4vw;
@@ -620,8 +623,8 @@ footer {
   }
   .toggle-mobile {
     margin-right: 3.4vw;
-    padding-top: 0.11rem;
-    padding-bottom: 0.11rem;
+    padding-top: 0.13rem;
+    padding-bottom: 0.13rem;
   }
   .sidebar ul {
     list-style: none;
@@ -724,13 +727,19 @@ footer {
   }
 
   /* contact */
+  .contact-text {
+    margin-left: 1.2rem;
+  }
   .contact-info {
     padding-bottom: 2.5rem;
   }
+  .gmail {
+    width: 100%;
+  }
   .contact-btn:hover {
-    background-color: var(--main-bg-color);
+    background-color: var(--main-bg-color)!important;
     border: 0.05px solid rgba(255, 255, 255, 0.5)!important;
-    color: #FFFFFF;
+    color: var(--light-text-color)!important;
   }
   .btn-light:hover {
     background-color: var(--main-text-color)!important;
@@ -762,10 +771,11 @@ footer {
 
   .card-body {
     padding: 0 3vw;
+    font-size: 0.98rem;
   }
   .open {
     padding: 0 3vw;
-    height: 12rem;
+    height: 11rem;
   }
   
 
@@ -822,6 +832,9 @@ footer {
   .uil {
     font-size: 1rem;
   }
+  .logo-padding {
+    padding: 0.3rem 0.3rem;
+  }
   .menu-button,.close-button {
     display: flex;
     align-items: center;
@@ -829,8 +842,7 @@ footer {
     color: #FFFFFF;
     font-size: 1rem;
     margin-left: 8vw;
-    padding-left: 1.15rem;
-    padding-right: 1.15rem;
+    padding: 0.4rem 1.15rem;
     font-size: 1rem;
     cursor: pointer;
     background-color: var(--main-bg-color);
@@ -848,8 +860,8 @@ footer {
   }
   .toggle-mobile {
     margin-right: 8vw;
-    padding-top: 0.25rem;
-    padding-bottom: 0.25rem;
+    padding-top: 0.13rem;
+    padding-bottom: 0.13rem;
   }
   .sidebar ul {
     list-style: none;
@@ -970,7 +982,7 @@ footer {
 }
 .open {
   padding: 0 7vw;
-  height: 8.25rem;
+  height: 5.25rem;
 }
 
 .port-heading {
@@ -991,17 +1003,3 @@ footer {
     width: 100%;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-

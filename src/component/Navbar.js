@@ -96,7 +96,7 @@ const Navbar = () => {
       </div>
       {show && <div className="backdrop" onClick={showNavItem}></div>}
 
-    <Link className="navbar-brand py-2 logo-mobile logo my-auto overflow-hidden" to="#home"><span className={`xxx border border-1 border-white p-1 ms- my-auto ${mode ? "border-black" : ""}`}><span className="bg-blue text-white">RIDOY</span> <span className="nav-shop">MONDOL</span></span></Link>
+    <Link className="navbar-brand py-2 logo-mobile logo my-auto overflow-hidden" to="#home"><span className={`xxx border border-1 border-white logo-padding my-auto ${mode ? "border-black" : ""}`}><span className="bg-blue text-white">RIDOY</span> <span className="nav-shop">MONDOL</span></span></Link>
 
     </div>
   </>
