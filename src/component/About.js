@@ -182,7 +182,7 @@ const About = () => {
                                         <p className={`${isP8Intersecting ? 'rightIn' : ''}`}>Check out my portfolio to see my work and get in touch to discuss your project.</p>
                                     </div>
                                     <div ref={p9Ref} id="about-p9">
-                                        <p className={`${isP9Intersecting ? 'topIn' : ''}`}>Ready to create something great? Let's connect!</p>
+                                        <p className={`${isP9Intersecting ? 'rightIn' : ''}`}>Ready to create something great? Let's connect!</p>
                                     </div>
                                 </div>
                             )}

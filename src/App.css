@@ -116,20 +116,32 @@ body {
 /* Navbar */
 .navbar {
   background-color: var(--main-bg-color);
-  padding: 0.8rem 0;
   width: 100vw;
   height: 4.5rem;
   transition: background-color 0.3s ease-in;
+  overflow: hidden;
 }
-.bg-blue {
-  background-color: blue;
+.logo-dark {
+  background-image: url("./component/images/dark-logo.png");
+  height: 50px;
+  width: 69.44px;
+  background-size: cover;
+  transform: scale(1);
+  transition: all 0.3s ease-in;
 }
-.nav-shop {
-  color: rgb(248,111,3);
+.logo-light {
+  background-image: url("./component/images/light-logo.png");
+  height: 50px;
+  width: 69.44px;
+  background-size: cover;
+  transform: scale(1);
+  transition: all 0.3s ease-in;
 }
-.logo {
-  font-weight: 600;
-} 
+.logo-dark:hover,
+.logo-light:hover {
+  transform: scale(1.05);
+  transform: transform 0.3s ease-in;
+}
 .link {
   color: #FFFFFF;
   font-size: 1.2rem;
@@ -340,9 +352,12 @@ body {
   transition: color 0.3s ease-in;
 }
 .gmail {
-  width: 17.2rem;
+  width: 19rem;
   color: var(--light-text-color);
   transition: color 0.3s ease-in;
+}
+.location {
+  width: 15rem;
 }
 .linkedin:hover,
 .gmail:hover {
@@ -562,15 +577,13 @@ footer {
 
 /* responsive code for mobile */
 @media all and (max-width:576px) {
+   /* Navbar */
   .hide-item {
     display: none;
   }
   .brand-align {
     margin-right: 3.4vw;
     font-weight: 600;
-  }
-  .border-black {
-    border: 1px solid var(--main-bg-color)!important;
   }
   .mobile-sidebar {
     display: block;
@@ -584,6 +597,7 @@ footer {
     background-color: var(--main-bg-color);
     position: fixed;
     z-index: 1;
+    transition: background-color 0.3s ease-in;
   }
   .sidebar {
     width: 70%;
@@ -605,9 +619,6 @@ footer {
   .uil {
     font-size: 1rem;
   }
-  .logo-padding {
-    padding: 0.3rem 0.3rem;
-  } 
   .menu-button,.close-button {
     display: flex;
     align-items: center;
@@ -655,10 +666,6 @@ footer {
   .home-link {
     margin-top: 1rem;
   }
-  /* .nav-item.active .link {
-    font-weight: 480; 
-    transition: 0.2s ease-in-out;
-  } */
   .backdrop {
     position: fixed;
     top: 0;
@@ -672,6 +679,10 @@ footer {
   .logo-mobile {
     margin-right: 3.4vw;
   }
+.logo-dark:hover,
+.logo-light:hover {
+  transform: scale(1);
+}
 
   /* home */
   .hide-laptop {
@@ -750,9 +761,6 @@ footer {
   }
   .contact-info {
     padding-bottom: 2.5rem;
-  }
-  .gmail {
-    width: 100%;
   }
   .linkedin:hover,
   .gmail:hover {
@@ -841,10 +849,6 @@ footer {
   .hide-item {
     display: none;
   }
-  .brand-align {
-    margin-right: 8vw;
-    font-weight: 600;
-  }
   .mobile-sidebar {
     display: block;
   }
@@ -856,7 +860,8 @@ footer {
     position: relative;
     background-color: var(--main-bg-color);
     position: fixed;
-    z-index: 1; 
+    z-index: 1;
+    transition: background-color 0.3s ease-in; 
   }
   .sidebar {
     width: 70%;
@@ -877,9 +882,6 @@ footer {
   } 
   .uil {
     font-size: 1rem;
-  }
-  .logo-padding {
-    padding: 0.3rem 0.3rem;
   }
   .menu-button,.close-button {
     display: flex;
@@ -941,6 +943,10 @@ footer {
   }
   .logo-mobile {
     margin-right: 8vw;
+  }
+  .logo-dark:hover,
+  .logo-light:hover {
+    transform: scale(1);
   }
 
   /* home */

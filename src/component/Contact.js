@@ -125,7 +125,7 @@ const Contact = () => {
                 <Heading title1="Contact" title2="Me" />
                 <div className="row">
                     <div className="col-md-6 contact-info">
-                        <div className="ms-md-5 mt-5 mt-sm-0">
+                        <div className="mt-5 mt-sm-0">
                             <div ref={linkedInRef} id="contact-linkedin">
                                 <Link
                                     target="_blank"
@@ -171,10 +171,9 @@ const Contact = () => {
                             </div>
 
                             <div ref={githubRef} id="contact-github">
-                                <Link
-                                    target="_blank"
+                                <Link target="_blank"
                                     to="https://github.com/Ridoy-Mondol"
-                                    className={`text-decoration-none my- d-flex align-items-center linkedin ${isGithubIntersecting ? 'leftIn' : ''} ${mode ? "dark light-link" : ""}`}
+                                    className={`text-decoration-none d-flex align-items-center linkedin ${isGithubIntersecting ? 'leftIn' : ''} ${mode ? "dark light-link" : ""}`}
                                 >
                                     <i className="fa-brands fa-github contact-icon"></i>
                                     <span className="contact-text">Ridoy Mondol</span>
@@ -182,10 +181,10 @@ const Contact = () => {
                             </div>
                             
                             <div ref={locationRef} id="contact-location">
-                                <div className={`d-flex align-items-center my-4 gmail ${isLocationIntersecting ? 'leftIn' : ''} ${mode ? "dark light-link" : ""}`}>
+                                <Link target="_blank" to= "https://www.google.com/maps/place/Rajshahi/@24.3795917,88.6061601,13z/data=!3m1!4b1!4m6!3m5!1s0x39fbefa96a38d031:0x10f93a950ed6f410!8m2!3d24.3746497!4d88.6003665!16zL20vMDR2MDc2?entry=ttu" className={`d-flex text-decoration-none align-items-center my-4 gmail location ${isLocationIntersecting ? 'leftIn' : ''} ${mode ? "dark light-link" : ""}`}>
                                     <i className="fa-solid fa-location-arrow contact-icon"></i>
                                     <span className="contact-text">Rajshahi, Bangladesh</span>
-                                </div>
+                                </Link>
                             </div>
                         </div>
                     </div>

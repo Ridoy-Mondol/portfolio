@@ -12,7 +12,9 @@ const Navbar = () => {
     <> 
     <nav className={`hide-item navbar navbar-expand-lg fixed-top ${mode ? "light-bg" : ""}`}>
     <div className="sidebar container">
-    <Link className="navbar-brand logo" to="#home"><span className={`p-1 ${mode ? "border-black" : "white-border"}`}><span className="bg-blue text-white">RIDOY</span> <span className="nav-shop">MONDOL</span></span></Link>
+    <Link className="navbar-brand" to="#home">
+    <div className={mode ? "logo-light" : "logo-dark"}></div>
+    </Link>
       <div className="navbar-nav mx-aut mb-2 mb-lg-0">
         <li className="nav-item">
           <Link className={`link ${mode ? "dark" : ""}`} aria-current="page" to="#home" smooth>Home</Link>
@@ -96,7 +98,9 @@ const Navbar = () => {
       </div>
       {show && <div className="backdrop" onClick={showNavItem}></div>}
 
-    <Link className="navbar-brand py-2 logo-mobile logo my-auto overflow-hidden" to="#home"><span className={`xxx border border-1 border-white logo-padding my-auto ${mode ? "border-black" : ""}`}><span className="bg-blue text-white">RIDOY</span> <span className="nav-shop">MONDOL</span></span></Link>
+    <Link className="navbar-brand logo-mobile my-auto overflow-hidden" to="#home">
+    <div className={mode ? "logo-light" : "logo-dark"}></div>
+    </Link>
 
     </div>
   </>
