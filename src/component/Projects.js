@@ -39,7 +39,7 @@ const Projects = () => {
                     ref={(el) => (refs.current[index] = { current: el })}
                     id={`card-${index}`}
                   >
-                    <h3 className={`project-title ${isIntersecting ? 'leftIn' : ''}`}>{elem.title}</h3>
+                    <h4 className={`project-title ${isIntersecting ? 'leftIn' : ''}`}>{elem.title}</h4>
                     <Link className="overflow-hidden" to={elem.link} target="_blank">
                       <img src={elem.img_src} className={`port-img img-fluid ${isIntersecting ? 'leftIn' : ''}`} height="190" alt="" />
                     </Link>
