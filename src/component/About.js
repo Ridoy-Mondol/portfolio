@@ -1,4 +1,4 @@
-import img from "../component/images/My_newprofile.jpg";
+import img from "../component/images/about-img.jpg";
 import React, { useState, useRef, useEffect } from "react";
 import useObserver from './useObserver';
 import Heading from "./heading";

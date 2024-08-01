@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import img from "../component/images/linkedIn_profile.jpeg";
+import img from "../component/images/home-img.jpeg";
 import useObserver from './useObserver';
 import { useMode } from "./context";
 
