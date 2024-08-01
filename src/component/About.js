@@ -162,18 +162,16 @@ const About = () => {
                                         <h5 className={`${isH52Intersecting ? 'rightIn' : ''}`}>Why Work With Me:</h5>
                                     </div>
                                     <div ref={p5Ref} id="about-p5">
-                                        <p className={`${isP5Intersecting ? 'rightIn' : ''}`}><span className="text-orange">✅ Smooth Integration:</span> 
+                                        <p className={`${isP5Intersecting ? 'rightIn' : ''}`}><span className="text-orange">✅ Smooth Integration: </span> 
                                         I ensure the frontend and backend work together perfectly for a seamless user experience.
                                         </p>
                                     </div>
                                     <div ref={p6Ref} id="about-p6">
-                                        <p className={`${isP6Intersecting ? 'rightIn' : ''}`}><span className="text-orange">
-                                            ✅ Always Up-to-Date:
-                                            </span> 
-                                            I keep up with new tech to make sure your project is modern and future-proof.</p>
+                                        <p className={`${isP6Intersecting ? 'rightIn' : ''}`}><span className="text-orange">✅ Always Up-to-Date: </span> 
+                                             I keep up with new tech to make sure your project is modern and future-proof.</p>
                                     </div>
                                     <div ref={p7Ref} id="about-p7">
-                                        <p className={`${isP7Intersecting ? 'rightIn' : ''}`}><span className="text-orange">✅ Collaborative Approach:</span> Whether you need a strong online presence or a developer to collaborate with, I'm here to help turn your ideas into reality.</p>
+                                        <p className={`${isP7Intersecting ? 'rightIn' : ''}`}><span className="text-orange">✅ Collaborative Approach: </span> Whether you need a strong online presence or a developer to collaborate with, I'm here to help turn your ideas into reality.</p>
                                     </div>
                                     <div ref={h53Ref} id="about-h53" className="mt-3">
                                         <h5 className={`${isH53Intersecting ? 'rightIn' : ''}`}>Let's Create Something Beautiful Together!</h5>

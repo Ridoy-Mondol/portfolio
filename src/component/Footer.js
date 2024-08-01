@@ -9,7 +9,7 @@ const Footer = () => {
 
     return (
         <footer ref={sectionRef}>
-           <span className={`${isIntersecting ? 'rightIn' : ''} ${mode ? "dark" : "light-color"}`}>Copyright &copy; : 2023 | All Rights Reserved By Md. Ridoy Mondol</span>
+           <span className={`${isIntersecting ? 'rightIn' : ''} ${mode ? "dark" : "light-color"}`}>Copyright &copy; : 2024 | All Rights Reserved By Md. Ridoy Mondol</span>
         </footer>
     )
 }

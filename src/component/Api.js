@@ -9,7 +9,7 @@ const Api = [
         id:1,
         icon :"fa-solid fa-laptop-code icon",
         category:"Full Stack Development",
-        description:"I am a Full-Stack Web Developer in MERN stack, skilled in creating and optimizing engaging web applications. I specialize in enhancing the online presence of businesses and individuals with dynamic, user-friendly solutions.",
+        description:"I am a Full-Stack Developer in MERN stack, skilled in creating and optimizing engaging web apps. I specialize in enhancing the online presence of businesses and individuals with dynamic, user-friendly solutions.",
     },
     {
         id:2,
