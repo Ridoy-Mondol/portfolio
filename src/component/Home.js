@@ -59,7 +59,7 @@ const Home = () => {
 
     const downloadResume = () => {
         const link = document.createElement('a');
-        link.href = "/Ridoy_Mondol.pdf";
+        link.href = "https://ridoy-mondol.github.io/portfolio/Ridoy_Mondol.pdf";
         link.setAttribute('download', 'Ridoy_Mondol_Resume.pdf');
         document.body.appendChild(link);
         link.click();
