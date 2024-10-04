@@ -10,6 +10,7 @@ const Home = () => {
     const h2Ref = useRef(null);
     const h42Ref = useRef(null);
     const pRef = useRef(null);
+    const btnRef = useRef(null);
 
     const { entries, observe, unobserve } = useObserver({ threshold: 0.5 });
 
@@ -20,6 +21,7 @@ const Home = () => {
         observe(h2Ref);
         observe(h42Ref);
         observe(pRef);
+        observe(btnRef);
 
         return () => {
             unobserve(imgRef);
@@ -28,6 +30,7 @@ const Home = () => {
             unobserve(h2Ref);
             unobserve(h42Ref);
             unobserve(pRef);
+            unobserve(btnRef);
         };
     }, [observe, unobserve]);
 
@@ -49,7 +52,19 @@ const Home = () => {
     const pEntry = entries.find(e => e.id === 'home-p');
     const isPIntersecting = pEntry ? pEntry.isIntersecting : false;
 
+    const btnEntry = entries.find(e => e.id === 'home-btn');
+    const isBtnIntersecting = btnEntry ? btnEntry.isIntersecting : false;
+
     const { mode } = useMode();
+
+    const downloadResume = () => {
+        const link = document.createElement('a');
+        link.href = "/Ridoy_Mondol.pdf";
+        link.setAttribute('download', 'Ridoy_Mondol_Resume.pdf');
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    }
 
     return (
         <div id="home">
@@ -77,6 +92,12 @@ const Home = () => {
                                         <span className="text-orange-2"> Express.js</span> and
                                         <span className="text-orange-2"> MongoDB</span>, ensuring seamless user experiences from concept to deployment.</p>
                                 </div>
+                                <button 
+                                className={`nav-btn ${isBtnIntersecting ? 'leftIn' : ''} ${mode ? "dark-btn about-btn-hover" : ""}`}  ref={btnRef} id="home-btn"
+                                onClick = {downloadResume}
+                                >
+                                Resume
+                            </button>
                             </div>
                         </div>
                         <div className="col-md-6 d-flex align-items-center justify-content-center overflow-hidden" ref={imgRef} id="home-img">
