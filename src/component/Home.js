@@ -77,13 +77,13 @@ const Home = () => {
                                     <h4 className={`home-text home-margin ${isH4Intersecting ? 'leftIn' : ''}`}>Hi, It's Me</h4>
                                 </div>
                                 <div ref={h1Ref} id="home-h1">
-                                    <h1 className={`hide-item home-white-txt ${isH1Intersecting ? 'leftIn' : ''} ${mode ? "dark" : ""}`}>Md. RIDOY MONDOL</h1>
+                                    <h1 className={`hide-item home-white-txt ${isH1Intersecting ? 'leftIn' : ''} ${mode ? "dark" : ""}`}>AHATASHAMUL ISLAM</h1>
                                 </div>
                                 <div ref={h2Ref} id="home-h2">
-                                    <h2 className={`hide-laptop home-white-txt ${isH2Intersecting ? 'leftIn' : ''} ${mode ? "dark" : ""}`}>Md. RIDOY MONDOL</h2>
+                                    <h2 className={`hide-laptop home-white-txt ${isH2Intersecting ? 'leftIn' : ''} ${mode ? "dark" : ""}`}>AHATASHAMUL ISLAM</h2>
                                 </div>
                                 <div ref={h42Ref} id="home-h42">
-                                    <h4 className={`home-white-txt ${isH42Intersecting ? 'leftIn' : ''} ${mode ? "dark" : ""}`}>And I'm a <span className="home-text">Full Stack Developer</span></h4>
+                                    <h4 className={`home-white-txt ${isH42Intersecting ? 'leftIn' : ''} ${mode ? "dark" : ""}`}>And I'm a <span className="home-text">Full Stack Developer</span> & <span className="home-text">Top Rated Freelancer on Upwork</span></h4>
                                 </div>
                                 <div ref={pRef} id="home-p">
                                     <p className={`my-description ${isPIntersecting ? 'leftIn' : ''} ${mode ? "dark" : "light-color"}`}>specializing in the MERN stack. I build dynamic web applications with expertise in <span className="text-orange-2">React.js</span>,

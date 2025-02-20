@@ -135,7 +135,7 @@ const About = () => {
                             </div>
                             <div ref={p1Ref} id="about-p1">
                                 <p className={`my-description ${isP1Intersecting ? 'rightIn' : ''}`}>
-                                Hi, I’m Md. RIDOY MONDOL, a dedicated full-stack developer who loves building web applications with the MERN stack.
+                                Hi, I’m MD. AHATASHAMUL ISLAM MONDOL, a dedicated full-stack developer who loves building web applications with the MERN stack.
                                 </p>
                             </div>
                             <div ref={h51Ref} id="about-h51" className="mt-3">

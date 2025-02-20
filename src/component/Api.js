@@ -47,8 +47,13 @@ const Api_2 = [
    },
    {
       language : "MongoDB",
-      class : "css progress",
-      percentage : "85%"
+      class : "react progress",
+      percentage : "90%"
+   },
+   {
+      language : "Postgres",
+      class : "react progress",
+      percentage : "90%"
    },
    {
       language : "SQL",
