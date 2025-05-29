@@ -189,7 +189,8 @@ const Contact = () => {
                         </div>
                     </div>
                     <div className="col-md-6 mt-5 mt-md-0">
-                        <form action="https://formspree.io/f/xkndrzjn" method="POST">
+                        {/* <form action="https://formspree.io/f/xkndrzjn" method="POST"> */}
+                        <form>
                             <div ref={nameRef} id="contact-name">
                                 <div className={`mx-auto ${isNameIntersecting ? 'rightIn' : ''}`}>
                                     <input 
