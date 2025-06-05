@@ -1,4 +1,4 @@
-# Md. Ridoy Mondol - Fullstack Developer (MERN Stack)
+# Md. Ahatashamul Islam Mondol - Fullstack Developer (MERN Stack)
 
 Welcome to my personal portfolio website! This repository contains the source code for my portfolio, which provides a brief description about me, showcases my services and skills, and displays some of my previous projects.
 
@@ -26,11 +26,11 @@ This website is built using the following technologies:
 
 Feel free to reach out to me for any queries or collaborations:
 
-- **Email**: [ridoymondol140@gmail.com](mailto:ridoymondol140@gmail.com)
+- **Email**: [ahatashamul140@gmail.com](mailto:ahatashamul140@gmail.com)
 
 Thank you for visiting my portfolio website!
 
 ---
 
-**Md. Ridoy Mondol**  
+**Md. Ahatashamul Islam Mondol**  
 Fullstack Developer (MERN Stack)
