@@ -202,12 +202,12 @@ const Contact = () => {
                 <Link
                   target="_blank"
                   to="https://github.com/Ridoy-Mondol"
-                  className={`text-decoration-none d-flex align-items-center linkedin ${
+                  className={`text-decoration-none d-flex align-items-center github ${
                     isGithubIntersecting ? "leftIn" : ""
                   } ${mode ? "dark light-link" : ""}`}
                 >
                   <i className="fa-brands fa-github contact-icon"></i>
-                  <span className="contact-text">Ridoy Mondol</span>
+                  <span className="contact-text">Md Ahatashamul Islam Mondol</span>
                 </Link>
               </div>
 

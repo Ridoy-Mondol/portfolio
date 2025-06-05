@@ -342,7 +342,7 @@ body {
 
 /* contact */
 .contact-text{
-  margin-left: 1.5rem;
+  margin-left: 1rem;
   font-size: 1.1rem;
 }
 .contact-icon{
@@ -358,11 +358,17 @@ body {
   color: var(--light-text-color);
   transition: color 0.3s ease-in;
 }
+.github {
+  width: 20rem;
+  color: var(--light-text-color);
+  transition: color 0.3s ease-in;
+}
 .location {
   width: 15rem;
 }
 .linkedin:hover,
-.gmail:hover {
+.gmail:hover,
+.github:hover {
   color: var(--main-orange-color)!important;
   transition: color 0.15s ease-in;
 } 
